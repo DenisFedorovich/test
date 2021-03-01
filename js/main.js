@@ -32,11 +32,11 @@ tabsContainer.addEventListener('click', event => {
 email.onblur = function () {
     let reg = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
     let address = document.getElementById("email").value;
-    var pc = document.getElementById("message");
-
+    //var img = document.getElementById("message");
+    //${ img.innerHTML="<img src='11111.png'>"}
 
     if (document.getElementById("email").value == '') {
-        output = `Введите email ${ pc.innerHTML="<img src='11111.png'>"}`;
+        output = 'Введите email';
         document.getElementById('message').innerHTML = output;
         return false;
     }
