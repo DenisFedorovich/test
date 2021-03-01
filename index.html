@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="form">
+    <title>Форма входа/регистрации</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="services">
+            <div class="services_tabs" id="tabs-container">
+                <div data-tab="one" class="services_tab left opened">
+                    Вход
+                </div>
+                <div data-tab="two" class="services_tab right">
+                    Регистрация
+                </div>
+            </div>
+            <div class="services_contents">
+                <div data-content="one" class="services_item opened">
+                    <form class="feedback-form-new" action="#" method="GET" name="publish">
+                        <div class="inputs">
+                            <span class="about-input">Введите E-mail</span>
+                            <input id="email" class="feedback-form-main-input" type="email" name="email"
+                                placeholder="E-mail">
+                            <label id="message" for="email"></label>
+                        </div>
+                        <div class="inputs">
+                            <span class="about-input">Введите пароль</span>
+                            <a class="change" onclick="return showPassword(this)" ></a>
+                            <input id="password" class="feedback-form-main-input2" type="text" name="password"
+                                placeholder="Пароль">
+                            <label id="mess" for="password"></label>
+                        </div>
+                        <div class="forgotten-password">
+                            <a href='#'>Забыли пароль?</a>
+                        </div>
+                        <div class="login-registraion">
+                            <button class="button" type="submit" name="submit">Войти</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div data-content="two" class="services_item">
+                    <form class="feedback-form-new" action="#" method="POST">
+                        <div class="inputs">
+                            <span class="about-input">Введите E-mail</span>
+                            <input id="emailreg" class="feedback-form-main-input" type="email" name="e-mail"
+                                placeholder="E-mail">
+                            <label id="emailreg1" for="mail"></label>
+                        </div>
+                        <div class="inputs">
+                            <span class="about-input">Введите телефон</span>
+                            <input id="tel" class="feedback-form-main-input" type="tel" name="tel"
+                                placeholder="Телефон">
+                            <label id="tel1" for="tel"></label>
+                        </div>
+                        <div class="inputs">
+                            <span class="about-input">Введите пароль</span>
+                            <a class="change" class="password-control" onclick="return showPassword(this)"></a>
+                            <input id="firstpass" class="feedback-form-main-input3" type="password" placeholder="Пароль">
+                            <label id="firstpass1" for="firstpass"></label>
+                        </div>
+                        <div class="inputs">
+                            <span class="about-input">Повторите пароль</span>
+                            <a class="change" class="password-control" onclick="return showPasswordDP(this)"></a>
+                            <input id="secondpass" class="feedback-form-main-input3" type="password" placeholder="Пароль">
+                            <label id="secondpass2" for="secondpass"></label>
+                        </div>
+                        <div class="select-block">
+                            <span class="about-input">Выберите регион</span>
+                            <select id="select" class="select-country">
+                                <option value="region">Регион</option>
+                                <option value="Беларусь">Беларусь</option>
+                                <option value="Россия">Россия</option>
+                                <option value="Казахстан">Казахстан</option>
+                            </select>
+                            <label id="sel" for="select"></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="checkbox" value="check" id="accept">
+                            <label for="accept">
+                                Примите <a href="#">пользовательское соглашение</a>
+                            </label>
+                            <span id="checkaccept"></span>
+                        </div>
+
+                        <div class="login-registraion">
+                            <button class="button" type="submit" name="submit" value="Войти"
+                            onclick="return check()" >Войти</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <a href="#" class="close"></a>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
+
