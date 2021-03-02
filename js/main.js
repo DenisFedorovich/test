@@ -219,7 +219,7 @@ secondpass.onfocus = function () {
     document.getElementById('secondpass2').innerText = '';
 };
 
-//password to text (change govnokod on review later )
+//password to text (change this later )
 
 function showPassword(target) {
     let input = document.getElementById('password');
@@ -282,14 +282,3 @@ document.publish.onsubmit = function () {
     }
 };*/
 
-/*if (regexp.test(account.value)) {
-      valid.innerText = "";
-  } else {
-      valid.innerText = "Пароль должен состоять только из цифр и букв латинского алфавита";
-  }
-
-  if (regexp1.test(account.value)) {
-      valid.innerText = "";
-  } else {
-      valid.innerText = "Пароль должен содержать как минимум 1 цифру, 1 заглавную и 1 прописную букву";
-  }*/
