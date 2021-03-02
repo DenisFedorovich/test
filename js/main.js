@@ -33,7 +33,7 @@ email.onblur = function () {
     let reg = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
     let address = document.getElementById("email").value;
     //var img = document.getElementById("message");
-    //${ img.innerHTML="<img src='11111.png'>"}
+    //${ img.innerHTML="<img src='../img/11111.png'>"}
 
     if (document.getElementById("email").value == '') {
         output = 'Введите email';
